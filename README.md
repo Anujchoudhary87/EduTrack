@@ -2,6 +2,12 @@
 
 EduTrack is a high-performance content learning platform built to track real-time user engagement through a structured learning hierarchy (Books → Chapters → Content).
 
+**Live demo:** https://edu-track-2ats.vercel.app/
+---
+**Video Link:** https://drive.google.com/drive/folders/1h7PMsUMfav4cFh-gOvKXh1_APcjkWLJo
+
+---
+
 ## 🚀 Key Features
 - **Structured Content Viewer**: Browse books and chapters with seamless navigation.
 - **Real-time Video Tracking**: Captures cumulative watch time, not just starts/stops.
