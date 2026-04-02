@@ -8,13 +8,13 @@ EduTrack is a high-performance content learning platform built to track real-tim
 
 ---
 
-## 🚀 Key Features
+##  Key Features
 - **Structured Content Viewer**: Browse books and chapters with seamless navigation.
 - **Real-time Video Tracking**: Captures cumulative watch time, not just starts/stops.
 - **Engagement Hooks**: Automatically tracks scroll depth and interactive button clicks.
 - **Live Analytics Dashboard**: Visualizes data through interactive charts and performance cards.
 
-## 🏗️ Architecture Decisions
+## Architecture Decisions
 
 ### Choosing the Tech Stack
 - **Frontend**: Next.js (App Router) for a modern, performant, and SEO-friendly user experience. Tailwind CSS for premium, responsive UI.
@@ -28,12 +28,12 @@ Handling high-frequency analytics events (like video watch time) requires carefu
 3. **Optimized Aggregation**: The dashboard query uses PostgreSQL's `GROUP BY` with indexed columns (`videoId`, `contentId`, `buttonLabel`) to ensure sub-second response times even as the dataset grows.
 4. **Average Watch Time Logic**: We calculate total watch time per user-session first, then average across all sessions to provide a true reflection of user stickiness rather than just counting server pings.
 
-### 📊 Third Metric: Page Scroll Depth
+### Third Metric: Page Scroll Depth
 I chose **Scroll Depth** as the third metric to complement video watch time.
 - **Why?**: High video watch time is great, but for text-heavy chapters, we need to know if users are actually reading or just watching the video and moving on.
 - **Business Insight**: If scroll depth remains low while video watch time is high, it suggests the text content may be redundant, too long, or not engaging enough compared to the visual media.
 
-## 🛠️ Setup Instructions
+##  Setup Instructions
 
 ### Prerequisites
 - Node.js (v18+)
@@ -61,7 +61,7 @@ npm run dev
 - interact with buttons and scroll through content.
 - Go to `/analytics` to see the live tracking data.
 
-## 📐 Database Schema
+##  Database Schema
 
 ### ButtonClick
 Tracks specific UI interactions.
