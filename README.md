@@ -81,5 +81,4 @@ Measures content completion.
 - `maxScrollPercentage` (0-100)
 - `contentId`
 
----
-*Developed for the Intern Assignment.*
+
